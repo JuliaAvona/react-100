@@ -1,32 +1,41 @@
-body {
-  background-color: rgb(0, 41, 48);
-  color: white;
+.app-wrapper {
+  background-color: rgb(255, 255, 255);
+  color: rgb(6, 0, 38);
   max-width: 1250px;
   margin: 0 auto;
   font-size: 10px;
-  padding-top: 30px;
+  display: grid;
+
+  grid-template-areas:
+    "header header header"
+    "nav content content";
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 1px;
+
 }
 
-a {
-  text-decoration: none;
-  color: rgb(66, 255, 63);
+.logo {
+  width: 60px;
+  height: auto;
+}
+
+.header {
+  grid-area: header;
+  background-color: #8d96d0;
+}
+
+.nav {
+  grid-area: nav;
+  background-color: #9db2ef;
+}
+
+.nav a {
   font-size: 3rem;
-  margin-right: 50px;
-  cursor: pointer;
+  color: white;
 }
 
-a:hover {
-  color: rgb(0, 213, 255);
-}
-
-h1 {
-  list-style-type: disc;
-  color: rgb(234, 255, 0);
-  font-size: 5rem;
-}
-
-ul li {
-  list-style-type: disc;
-  color: rgb(0, 255, 221);
-  font-size: 4rem;
+.content {
+  grid-area: content;
+  background-color: #caeff7;
 }
