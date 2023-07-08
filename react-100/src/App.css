@@ -11,37 +11,6 @@
     "nav content content";
   grid-template-rows: 60px 1fr;
   grid-template-columns: 2fr 10fr;
-  grid-gap: 1px;
+  grid-gap: 10px;
 
-}
-
-.logo {
-  width: 60px;
-  height: auto;
-}
-
-.header {
-  grid-area: header;
-  background-color: #a0adff;
-}
-
-.nav {
-  grid-area: nav;
-  background-color: #becefd;
-  padding: 20px;
-}
-
-.nav a {
-  font-size: 3rem;
-  color: white;
-  cursor: pointer;
-}
-
-.nav a:hover {
-  color: rgb(205, 249, 255);
-}
-
-.content {
-  grid-area: content;
-  background-color: #d5f1f7;
 }

@@ -1,10 +1,11 @@
 import React from 'react';
+import classes from './Header.module.css';
 
 const Header = () => {
   return (
-    <header className="header">
+    <header className={classes.header}>
       <img
-        className="logo"
+        className={classes.logo}
         src="https://cryptologos.cc/logos/uniswap-uni-logo.png"
         alt="logo"
       />

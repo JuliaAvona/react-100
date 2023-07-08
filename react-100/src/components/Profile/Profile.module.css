@@ -1,0 +1,14 @@
+.content {
+    grid-area: content;
+    background-color: #dff9ff;
+}
+
+.item {
+    color: rgb(36, 22, 0);
+    font-size: 3rem;
+}
+
+.img {
+    width: 100%;
+    height: auto
+}

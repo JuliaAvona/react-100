@@ -1,0 +1,15 @@
+.nav {
+    grid-area: nav;
+    background-color: #d0dcff;
+    padding: 20px;
+}
+
+.item {
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+}
+
+.item:hover {
+    color: rgb(205, 249, 255);
+}
