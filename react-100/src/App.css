@@ -14,3 +14,20 @@
   grid-gap: 10px;
 
 }
+
+.app-wrapper-content {
+  grid-area: content;
+  background-color: #a4f9c6;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.app-wrapper-content .logo {
+  width: 60px;
+  height: auto;
+}
+
+.app-wrapper-content .header {
+  grid-area: header;
+  background-color: #c8fdee;
+}
