@@ -8,7 +8,7 @@ const Profile = () => {
       <div>
         <img
           className={components.img}
-          src="https://wallpaperaccess.com/full/9059693.png"
+          src="https://images2.alphacoders.com/844/thumb-1920-844803.jpg"
           alt="logo"
         />
       </div>
