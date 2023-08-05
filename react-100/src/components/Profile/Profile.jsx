@@ -1,5 +1,5 @@
 import React from 'react';
-import components from './Profile.module.css';
+import styles from './Profile.module.css';
 import MyPosts from './MyPosts/MyPosts';
 
 const Profile = () => {
@@ -7,7 +7,7 @@ const Profile = () => {
     <div>
       <div>
         <img
-          className={components.img}
+          className={styles.img}
           src="https://images2.alphacoders.com/844/thumb-1920-844803.jpg"
           alt="logo"
         />
