@@ -1,9 +1,20 @@
-.logo {
-    width: 60px;
-    height: auto;
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
 }
 
-.header {
-    grid-area: header;
-    background-color: #c8fdee;
+.dialogItems {
+    padding: 1rem;
 }
+
+.dialogItems .active {
+    color: rgb(0, 183, 255);
+}
+
+.dialog {}
+
+.messageItems {
+    padding: 1rem;
+}
+
+.message {}
