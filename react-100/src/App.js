@@ -16,7 +16,12 @@ const App = (props) => {
           <Routes>
             <Route
               path="/profile"
-              element={<Profile state={props.state.profilePage} />}
+              element={
+                <Profile
+                  state={props.state.profilePage}
+                  addPost={props.addPost}
+                />
+              }
             />
           </Routes>
           <Routes>
@@ -25,24 +30,6 @@ const App = (props) => {
               element={<Dialogs state={props.state.dialogsPage} />}
             />
           </Routes>
-          {/* <Routes>
-            <Route
-              path="/news"
-              element={<Profile state={props.state.profilePage} />}
-            />
-          </Routes>
-          <Routes>
-            <Route
-              path="/music"
-              element={<Dialogs state={props.state.dialogsPage} />}
-            />
-          </Routes>
-          <Routes>
-            <Route
-              path="/settings"
-              element={<Profile state={props.state.profilePage} />}
-            />
-          </Routes> */}
         </div>
       </div>
     </BrowserRouter>

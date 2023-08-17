@@ -10,7 +10,7 @@ const MyPosts = (props) => {
 
   const createPost = () => {
     let text = newPostElement.current.value;
-    alert(text);
+    props.addPost(text);
   };
 
   return (
@@ -24,7 +24,7 @@ const MyPosts = (props) => {
           <button onClick={createPost}>Add post</button>
         </div>
       </div>
-      <div className={() => console.log('hello')}>{postsElements}</div>
+      <div>{postsElements}</div>
     </div>
   );
 };
