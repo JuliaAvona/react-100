@@ -1,5 +1,4 @@
 import React from 'react';
-import components from './MyPosts.module.css';
 import Post from './Post/Post';
 
 const MyPosts = (props) => {
@@ -7,18 +6,25 @@ const MyPosts = (props) => {
     <Post message={p.message} likesCount={p.likesCount} />
   ));
 
+  const newPostElement = React.createRef();
+
+  const createPost = () => {
+    let text = newPostElement.current.value;
+    alert(text);
+  };
+
   return (
     <div>
       <h2>My posts</h2>
       <div>
         <div>
-          <textarea></textarea>
+          <textarea ref={newPostElement}></textarea>
         </div>
         <div>
-          <button>Add post</button>
+          <button onClick={createPost}>Add post</button>
         </div>
       </div>
-      <div className={components.posts}>{postsElements}</div>
+      <div className={() => console.log('hello')}>{postsElements}</div>
     </div>
   );
 };

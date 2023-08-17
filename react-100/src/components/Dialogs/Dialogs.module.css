@@ -11,10 +11,29 @@
     color: rgb(0, 183, 255);
 }
 
-.dialog {}
-
 .messageItems {
     padding: 1rem;
 }
 
-.message {}
+.textarea {
+    height: 100px;
+    border-radius: 10px;
+    font-size: 1.5em;
+}
+
+.message {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    color: rgb(0, 183, 255);
+}
+
+.button {
+    background-color: rgb(0, 183, 255);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 1rem;
+    font-size: 2rem;
+}

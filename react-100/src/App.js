@@ -25,7 +25,7 @@ const App = (props) => {
               element={<Dialogs state={props.state.dialogsPage} />}
             />
           </Routes>
-          <Routes>
+          {/* <Routes>
             <Route
               path="/news"
               element={<Profile state={props.state.profilePage} />}
@@ -42,7 +42,7 @@ const App = (props) => {
               path="/settings"
               element={<Profile state={props.state.profilePage} />}
             />
-          </Routes>
+          </Routes> */}
         </div>
       </div>
     </BrowserRouter>
